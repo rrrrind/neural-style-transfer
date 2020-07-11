@@ -24,6 +24,8 @@ RUN jupyter labextension install @jupyterlab/toc
 # jupyterlabの"tqdm"
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
+# jupyterlabの"Variable Inspector""
+RUN jupyter labextension install @lckr/jupyterlab_variableinspector
 
 # 作業ディレクトリ
 WORKDIR /home/workspace/src
